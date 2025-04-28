@@ -1,0 +1,321 @@
+* {
+    font-family: "Roboto";
+    font-weight: 420;
+    
+}
+
+
+
+
+/* Nav Start */
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.nav-item a {
+    position: relative;
+}
+.navbar-nav .nav-item a::before,
+.navbar-brand::before {
+    content: "";
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: darkslateblue;
+    transition: width 0.45s;
+}
+
+.navbar-nav .nav-item a:hover::before,
+.navbar-brand:hover::before {
+    width: 100%;
+}
+.container .navbar-brand {
+    position: relative;
+    font-size: 2.5rem;
+    font-family: "Vollkorn SC";
+}
+
+.container .navbar-brand span {
+    font-size: 3rem;
+    color: aqua;
+}
+
+.navbar-nav a {
+    font-size: 1.3rem;
+    font-weight: 550;
+    font-family: "Vollkorn SC";
+}
+
+#btn-right {
+    padding: 10px 20px;
+    background-color: rgb(131, 58, 180);
+    color: white;
+    transition: 0.5s ease;
+}
+
+/*! Nav end */
+/*? Hero Content start */
+.hero {
+    color: white;
+    text-align: center;
+    height: 86vh;
+    background: url(john-lee-oMneOBYhJxY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-content {
+    margin-top: 100px;
+}
+
+.hero-content h6 {
+    font-weight: 400;
+}
+
+#content-btn1 {
+    border: 1px solid white;
+    background-color: rgb(131, 58, 180);
+    transition: 0.6s;
+}
+#content-btn2 {
+    outline: 1px solid black;
+    transition: 0.6s;
+}
+#content-btn1:hover {
+    background-color: transparent;
+    outline: 1px solid black;
+}
+#content-btn2:hover {
+    background-color: rgb(131, 58, 180);
+    border: 1px solid white;
+}
+
+/*? Hero Content end */
+/*! About section  start*/
+.line {
+    margin-left: 47%;
+    width: 90px;
+    height: 5px;
+    background-color: rgb(131, 58, 180);
+}
+
+.icon-box i {
+    padding: 24px 17px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: blue;
+    font-size: 20px;
+}
+
+.about img {
+    max-height: 35rem;
+}
+
+/*! About section  end*/
+/* Services section start */
+
+.service {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.icon-box2 i {
+    font-size: 3.5rem;
+    color: rgb(39, 39, 255);
+    background-color: rgb(211, 211, 255)
+}
+
+.service {
+    position: relative;
+    z-index: 2;
+}
+
+.service::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 0.7s;
+}
+
+.service:hover::after {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(131, 58, 180);
+    z-index: -1;
+}
+
+.service:hover h5,
+.service:hover p {
+    color: white;
+}
+
+/* Services section end */
+/*! Counter start */
+.counter {
+    height: 60vh;
+    background: linear-gradient(rgba(47, 109, 214, 0.8), rgba(12, 71, 171, 0.5)), url(teamwork-group-young-employees-working-computers-while-sitting-modern-open-space_386167-13933.avif);
+    background-position: center;
+    background-size: cover;
+
+}
+
+/*! Counter end */
+/*? Portfolio start */
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item .icon-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.img-zoom-wrapper {
+    overflow: hidden;
+}
+
+.img-zoom-wrapper img {
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.img-zoom-wrapper img:hover {
+    transform: scale(1.1);
+
+}
+
+.portfolio-item:hover .icon-box {
+    top: 50%;
+    opacity: 1;
+}
+
+/* Portfolio end*/
+/*! Review start */
+.review-head {
+    position: relative;
+}
+
+.review-head::after {
+    content: "";
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    position: absolute;
+    bottom: -15px;
+    transform: rotate(-45deg);
+}
+
+.person-img img {
+    width: 60px;
+    height: 60px;
+}
+
+
+
+.review-head {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/*? Review end */
+
+/*! Team start */
+.team-item {
+    position: relative;
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-wrapper {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.img-wrapper img {
+    height: 25rem;
+    transition: 0.7s;
+}
+
+.team-item:hover img {
+    transform: scale(1.1);
+
+}
+
+.team-contents {
+    position: absolute;
+    bottom: -5%;
+    left: 25%;
+    background-color: rgb(96, 96, 190);
+    opacity: 0;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    transition: 0.65s;
+}
+
+.team-item:hover .team-contents {
+    opacity: 1;
+    bottom: 10%;
+}
+
+/*? Team end */
+
+/*! Contact  start*/
+.form-group #form-btn {
+    background-color: rgb(131, 58, 180);
+}
+
+#contact {
+    position: relative;
+    z-index: 2;
+}
+
+#contact::after {
+    content: "";
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(47, 109, 214, 0.8), rgba(12, 71, 171, 0.5)), url(teams.jpg);
+    z-index: -1;
+}
+.form-group .form-control{
+    border-radius: 10px;
+
+}
+.form-group .form-control:focus{
+    box-shadow: none;
+    border: 2px solid rgb(131, 58, 180);
+    border-radius: 10px;
+}
+
+
+
+/* !Contact  end*/
+/* Footer start */
+#footer-wrapper{
+    height: 19rem;
+    display: flex;
+    align-items: center;
+}
+.icons a{
+    transition: 0.7s;
+color: white;
+}
+.icons a:hover{
+color:rgb(131, 58, 180) ;
+transform: scale(1.3);
+}
+
+
+/* Footer end */
